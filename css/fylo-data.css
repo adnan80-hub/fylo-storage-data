@@ -1,0 +1,284 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--Very-Dark-Blue);
+    background-image: url("../images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position: bottom -118px left 0px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+@media (max-width: 375px) {
+    body {
+        background-image: url("../images/bg-mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 85%;
+    }
+}
+
+
+:root {
+    --Pale-Blue: hsl(243, 100%, 93%);
+--Grayish-Blue: hsl(229, 7%, 55%);
+--Dark-Blue: hsl(228, 56%, 26%);
+--Very-Dark-Blue: hsl(229, 57%, 11%);
+
+}
+
+
+.flex-fylo {
+    width: 677px;
+    margin-top: -3rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+@media (max-width: 375px) {
+    .flex-fylo {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.fylo-data {
+    width: 250px;
+    height: 140px;
+    background-color: var(--Dark-Blue);
+    padding: 4% 20px;
+    border-radius: 6px;
+    border-top-right-radius: 70px;
+}
+
+@media (max-width: 375px) {
+    .fylo-data {
+        margin-bottom: 25px;
+        width: 230px;
+        height: 120px;
+    }
+}
+
+
+.fylo-data .logo-fylo {
+    width: 45%;
+    margin-bottom: 12%;
+}
+
+
+
+.fylo-data .group-data {
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+}
+
+.group-data :is(.document , .folder , .upload) {
+    width: 33px;
+    height: 33px;
+    border-radius: 5px;
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.document img ,
+.folder img ,
+.upload img {
+    width: 53%;
+}
+
+.fylo-size {
+    background-color: var(--Dark-Blue);
+    width: 400px;
+    height: 115px;
+    border-radius: 8px;
+}
+
+@media (max-width: 375px) {
+    .fylo-size {
+        width: 230px;
+    }
+}
+
+.fylo-size .head-fylo {
+    display: flex;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+@media (max-width: 375px) {
+    .fylo-size .head-fylo {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.head-fylo div:first-child {
+    font-size: 10px;
+    padding-top: 9%;
+    padding-left: 1rem;
+    color: var(--Pale-Blue);
+}
+
+@media (max-width: 375px) {
+    .head-fylo div:first-child {
+        margin-left: 10px;
+        font-size: 11px;
+    }
+}
+
+.head-fylo .message-net {
+    width: 120px;
+    height: 51px;
+    font-weight: 700;
+    background-color: white;
+    color: var(--Grayish-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+    top: -30px;
+    left: 4rem;
+}
+
+@media (max-width: 375px) {
+    .head-fylo .message-net {
+        position:relative;
+        top: 4rem;
+        border-radius: 7px;
+        left: 3rem;
+    }
+}
+
+
+.message-net::before {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    right: 0;
+    border-width: 8px;
+    border-style: solid;
+    border-color: white white transparent transparent;
+}
+
+@media (max-width: 375px) {
+    .message-net::before {
+        position: unset;
+    }
+}
+
+.gb-first {
+    color: white;
+    font-weight: bold;
+}
+
+.gb-second {
+    font-size: 25px;
+    color: var(--Dark-Blue);
+    padding-right: 7px;
+}
+
+.left {
+    font-size: 8px;
+    letter-spacing: 2px;
+}
+
+.inside-gradent {
+    width: 350px;
+    height: 13px;
+    margin-left: 3%;
+    border-radius: 30px;
+    border: 2px solid var(--Very-Dark-Blue);
+    background-color: var(--Very-Dark-Blue);
+    margin-bottom: 5px;
+}
+
+@media (max-width: 375px) {
+    .inside-gradent {
+        width: 194px;
+        margin-top: -2rem;
+        margin-left: 7%;
+    }
+}
+
+.inside-gradent .gradent {
+    width: 80%;
+    height: 100%;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
+    border-radius: 30px;
+    position: relative;
+}
+
+.gradent::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: 2px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.from-to {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 8px;
+    color: white;
+    margin-left: 3%;
+}
+
+
+@media (max-width: 375px) {
+    .from-to {
+        width: 205px;
+        margin-left: 6%;
+    }
+}
+
+
+
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%)
+
+### Neutral
+
+- Pale Blue: hsl(243, 100%, 93%)
+- Grayish Blue: hsl(229, 7%, 55%)
+- Dark Blue: hsl(228, 56%, 26%)
+- Very Dark Blue: hsl(229, 57%, 11%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 14px
+
+### Font
+
+- Family: [Raleway](https://fonts.google.com/specimen/Raleway)
+- Weights: 400, 700
