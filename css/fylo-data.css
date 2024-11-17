@@ -16,7 +16,7 @@ body {
     align-items: center; 
 }
 
-@media (max-width: 375px) {
+@media (max-width: 767px) {
     body {
         background-image: url("../images/bg-mobile.png");
         background-repeat: no-repeat;
@@ -43,7 +43,7 @@ body {
     justify-content: space-between;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 767px) {
     .flex-fylo {
         display: flex;
         flex-direction: column;
@@ -59,7 +59,7 @@ body {
     border-top-right-radius: 70px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 767px) {
     .fylo-data {
         margin-bottom: 25px;
         width: 230px;
@@ -104,7 +104,7 @@ body {
     border-radius: 8px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 767px) {
     .fylo-size {
         width: 230px;
     }
@@ -116,7 +116,7 @@ body {
     margin-bottom: 2%;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 767px) {
     .fylo-size .head-fylo {
         display: flex;
         flex-direction: column;
@@ -130,7 +130,7 @@ body {
     color: var(--Pale-Blue);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 767px) {
     .head-fylo div:first-child {
         margin-left: 10px;
         font-size: 11px;
@@ -152,7 +152,7 @@ body {
     left: 4rem;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 767px) {
     .head-fylo .message-net {
         position:relative;
         top: 4rem;
@@ -172,7 +172,7 @@ body {
     border-color: white white transparent transparent;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 767px) {
     .message-net::before {
         position: unset;
     }
@@ -204,7 +204,7 @@ body {
     margin-bottom: 5px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 767px) {
     .inside-gradent {
         width: 194px;
         margin-top: -2rem;
@@ -241,7 +241,7 @@ body {
 }
 
 
-@media (max-width: 375px) {
+@media (max-width: 767px) {
     .from-to {
         width: 205px;
         margin-left: 6%;
@@ -250,35 +250,3 @@ body {
 
 
 
-# Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
-- Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%)
-
-### Neutral
-
-- Pale Blue: hsl(243, 100%, 93%)
-- Grayish Blue: hsl(229, 7%, 55%)
-- Dark Blue: hsl(228, 56%, 26%)
-- Very Dark Blue: hsl(229, 57%, 11%)
-
-## Typography
-
-### Body Copy
-
-- Font size: 14px
-
-### Font
-
-- Family: [Raleway](https://fonts.google.com/specimen/Raleway)
-- Weights: 400, 700
